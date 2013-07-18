@@ -1770,7 +1770,7 @@ public class SamKnowsAggregateStatViewerActivity extends BaseLogoutActivity
 					long time = appSettings.getContinuousInterval();
 					long millis = System.currentTimeMillis() + time;
 					PendingIntent pending_intent = PendingIntent.getActivity(SamKnowsAggregateStatViewerActivity.this, Constants.CONTINUOUS_REQUEST_CODE, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-					manager.setRepeating(AlarmManager.RTC, millis, time, pending_intent);
+					manager.setInexactRepeating(AlarmManager.RTC_WAKEUP, millis, time, pending_intent);
 				}
 
 				overridePendingTransition(R.anim.transition_in,
