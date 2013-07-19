@@ -24,14 +24,12 @@ Minimum Operating System: Android 2.2 (Froyo) [API Level 8] Ideal Operating Syst
 ### Continuous Testing Feature
 
 * To activate continuous testing:
-
     1. Go to the menu and then settings.
     2. Scroll to the category titled "Continuous Test Controls".
     3. Select "Enable Continuous Testing".
-       - Upon returning to the main screen, you should then see a toast that declares "Continuous is enabled".
+        - Upon returning to the main screen, you should then see a toast that declares "Continuous is enabled".
 
 * To begin the continuous tests:
-
     1. Tap the down arrow on the dark gray bar with the phrase "Run now". (Do not tap "Run now" as it will not begin continuous testing, but rather it wil begin a single run of a full suite of tests.)
     2. Tap "Continuous [Latency / Loss]". (The text in the bracket will change to whichever test you specify in the settings.)
 
