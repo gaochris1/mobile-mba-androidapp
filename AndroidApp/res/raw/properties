@@ -7,6 +7,6 @@ test_start_window_in_millis_rtc_wakeup=300000
 protocol_scheme=http
 submit_path=mobile/submitjson
 download_config_path=mobile/getconfig
-enterprise_id=FCC_Operator_testing
+enterprise_id=FCC_FEMA
 user_self_identifier=true
 anonymous=true
