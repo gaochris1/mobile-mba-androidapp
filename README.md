@@ -1,4 +1,4 @@
-## mobile-mba-androidapp - General Build Public Release - v1.53
+## mobile-mba-androidapp - General Build Public Release - v1.57
 
 2013 Measuring Broadband America Program Mobile Measurement Android Application
 
