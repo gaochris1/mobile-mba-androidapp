@@ -49,259 +49,38 @@ Jump to example result.
 
 ### Measurement Reference
 
-Property Type Description Explanation
-
-_received
-
-Integer
-
-unix_timestamp of reception
-
-The timestamp recoded at server side at the moment the result file is being
-received.
-
-_sourceip
-
-String
-
-source ip address
-
-The Internet Protocol (IP) address of the handset submitting the results to
-the collecting infrastructure as seen by the collecting infrastructure.
-
-enterprise_id
-
-String
-
-FCC_Public
-
-The code for different panel programs.
-
-sim_operator_code
-
-String
-
-android.telephony.TelephonyManager  
-.getSimOperator()
-
-The field holds string from the Android method that identifies the MCC+MNC
-(mobile country code + mobile network code) of the provider of the SIM.
-
-submission_type
-
-String
-
-[scheduled_tests|init_tests|manual_tests]
-
-The application logic will select one of three possible string definitions.  
-Data results may be recorded from handsets downloading configuration files for
-test schedules from SamKnows scheduling servers; performing scheduled tests
-parsed from configuration files residing on the handset; or from a handset
-user initiating a manual test. Each category of initiating test are documented
-in this field.
-
-app_version_code
-
-String
-
-version code from androidmanifest.xml
-
-The field contains the current compiled application version number parsed from
-the application configuration file, androidmanifest.xml. The version number
-confirms to a major.minor build revision practice, e.g. V 1.23 major version
-revision one, minor version revision 23.
-
-app_version_name
-
-String
-
-version name from androidmanifest.xml
-
-The field contains the current compiled application version parsed from the
-application configuration file, androidmanifest.xml. The name may vary
-depending on the target user base, e.g. wireless carrier enterprise build.
-
-schedule_config_version
-
-String
-
-config file version
-
-This field contains the configuration file version currently in use. The
-application downloads this file periodically and modifies its tests parameters
-accordingly.
-
-timestamp
-
-Integer
-
-1359128122
-
-The unix timestamp of the handset performing the measurement at the beginning
-of the observations.
-
-datetime
-
-String
-
-Fri Jan 25 15:35:22 EST 2013
-
-The unix time and date of the handset performing the measurement at the
-beginning of the observations.
-
-timezone
-
-Integer
-
--5
-An integer denoting the number of hours offset from GMT time of the handset
-performing the measurement at the beginning of the observations.
-
-tests
-
-JSON Array
-
-Results for JHTTPGETMT, JHTTPPOSTMT, JUDPLATENCY,CLOSESTTARGET
-
-(See below for details of array.)  
-There are 3 entries in this array, one for each result type.
-
-metrics
-
-JSON Array
-
-Results for phone_identity, network_data, [gsm_cell_location OR
-cdma_cell_location], cell_neighbour_tower_data, location
-
-(See below for details of array.)  
-There are 6 entries in this array, one for each result type.
-
-conditions
-
-JSON Array
-
-Results for PARAM_EXPIRED, NETACTIVITY, CPUACTIVITY
-
-(See below for details of array.)  
-There are 3 entries in this array, one for each result type.
+|Property |Type |Description |Explanation|
+|---------|-----|------------|-----------|
+|_received|Integer|unix_timestamp of reception|The timestamp recoded at server side at the moment the result file is being received.|
+|_sourceip|String|source ip address|The Internet Protocol (IP) address of the handset submitting the results to the collecting infrastructure as seen by the collecting infrastructure.|
+|enterprise_id|String|FCC_Public|The code for different panel programs.|
+|sim_operator_code|String|android.telephony.TelephonyManager  .getSimOperator()|The field holds string from the Android method that identifies the MCC+MNC(mobile country code + mobile network code) of the provider of the SIM.|
+|submission_type|String|[scheduled_tests|init_tests|manual_tests]|The application logic will select one of three possible string definitions.  Data results may be recorded from handsets downloading configuration files for test schedules from SamKnows scheduling servers; performing scheduled tests parsed from configuration files residing on the handset; or from a handset user initiating a manual test. Each category of initiating test are documented in this field.|
+|app_version_code|String|version code from androidmanifest.xml|The field contains the current compiled application version number parsed from the application configuration file, androidmanifest.xml. The version number confirms to a major.minor build revision practice, e.g. V 1.23 major version revision one, minor version revision 23.|
+|app_version_name|String|version name from androidmanifest.xml|The field contains the current compiled application version parsed from the application configuration file, androidmanifest.xml. The name may vary depending on the target user base, e.g. wireless carrier enterprise build.|
+|schedule_config_version|String|config file version|This field contains the configuration file version currently in use. The application downloads this file periodically and modifies its tests parameters accordingly.|
+|timestamp|Integer|1359128122|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
+|datetime|String|Fri Jan 25 15:35:22 EST 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
+|timezone|Integer|-5|An integer denoting the number of hours offset from GMT time of the handset performing the measurement at the beginning of the observations.|
+|tests|JSON Array|Results for JHTTPGETMT, JHTTPPOSTMT, JUDPLATENCY,CLOSESTTARGET|(See below for details of array.)  There are 3 entries in this array, one for each result type.|
+|metrics|JSON Array|Results for phone_identity, network_data, [gsm_cell_location OR cdma_cell_location], cell_neighbour_tower_data, location|(See below for details of array.)  There are 6 entries in this array, one for each result type.|
+|conditions|JSON Array|Results for PARAM_EXPIRED, NETACTIVITY, CPUACTIVITY|(See below for details of array.)  There are 3 entries in this array, one for each result type.|
 
 ### JHTTPGETMT Reference
 
-Property Type Description Explanation
-
-type
-
-String
-
-JHTTPGETMT
-
-The active metric type 'JHTTPGETMT' describes measurement results of the
-active test for download performance.
-
-bytes_sec
-
-Integer
-
-154716
-
-The field represents the throughput experienced during the transfer period of
-the test, the value is obtained dividing the total amount of bytes transferred
-during the “transfer_period” by the time they have been transferred. This
-represents hence the download speed.
-
-datetime
-
-String (Android dtime format)
-
-Fri Jan 25 15:35:22 GMT 2013
-
-The field represents the time the test finished in UTC represented as a
-Android dtime datatype.
-
-number_of_threads
-
-Integer
-
-3
-
-The number of concurrent TCP connections used in the test.
-
-success
-
-Boolean
-
-true
-
-The field represents the success or failure of the measurement. True denotes a
-successful execution of the entire test.
-
-target
-
-String
-
-n1-the1.samknows.com
-
-The field holds a string of the measurement server target hostname or IP
-address. The value is pulled from the test configuration file. The test
-configuration file, or schedule_config file is donwloaded periodically by the
-application and its content specifies the parameters used for configuring the
-tests. An example of the file is schedule_example.xml locatetd in
-AndroidAppLibrary/res/raw
-
-target_ipaddress
-
-String
-
-46.17.56.234
-
-The field holds a four tuple colon deliminated IP address of the 'target'
-measurement server, as resolved by the handset's locally configured DNS for
-the active network used to execute the test.
-
-timestamp
-
-Integer
-
-1359128122
-
-The field contains the time the measurement concluded represented as a sql
-TIMESTAMP datatype.
-http://developer.android.com/reference/java/sql/Timestamp.html
-
-transfer_bytes
-
-Integer
-
-1783936
-
-The field contains the total bytes downloaded across all connections during
-the execution of the measurement.
-
-transfer_time
-
-Integer
-
-11530334
-
-The field contains the time the test ran for in microseconds.
-
-warmup_bytes
-
-Integer
-
-145024
-
-The field contains the Bytes transferred for all the TCP streams during the
-warm-up phase.
-
-warmup_time
-
-Integer
-
-1309661
-
-The field contains the time consumed for all the TCP streams to arrive at
-optimal window size (Units: microseconds).
+|Property| Type| Description| Explanation|
+|--------|-----|------------|------------|
+|type|String|JHTTPGETMT|The active metric type 'JHTTPGETMT' describes measurement results of the|active test for download performance.|
+|bytes_sec |Integer|154716|The field represents the throughput experienced during the transfer period of|the test, the value is obtained dividing the total amount of bytes transferred during the “transfer_period” by the time they have been transferred. This represents hence the download speed.|
+|datetime|String (Android dtime format)|Fri Jan 25 15:35:22 GMT 2013|The field represents the time the test finished in UTC represented as a Android dtime datatype.|number_of_threads|Integer|3The number of concurrent TCP connections used in the test.|
+|success|Boolean|true|The field represents the success or failure of the measurement. True denotes a successful execution of the entire test.|
+|target|String|n1-the1.samknows.com|The field holds a string of the measurement server target hostname or IP address. The value is pulled from the test configuration file. The test configuration file, or schedule_config file is donwloaded periodically by the application and its content specifies the parameters used for configuring the tests. An example of the file is schedule_example.xml locatetd in AndroidAppLibrary/res/raw|
+|target_ipaddress|String|46.17.56.234|The field holds a four tuple colon deliminated IP address of the 'target' measurement server, as resolved by the handset's locally configured DNS for the active network used to execute the test. |
+|timestamp|Integer|1359128122|The field contains the time the measurement concluded represented as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
+|transfer_bytes|Integer|1783936|The field contains the total bytes downloaded across all connections during|the execution of the measurement.|
+|transfer_time|Integer|11530334|The field contains the time the test ran for in microseconds.|
+|warmup_bytes|Integer|145024|The field contains the Bytes transferred for all the TCP streams during the|warm-up phase.|
+|warmup_time|Integer|1309661|The field contains the time consumed for all the TCP streams to arrive at|optimal window size (Units: microseconds).|
 
 ### JHTTPPOSTMT Reference
 
