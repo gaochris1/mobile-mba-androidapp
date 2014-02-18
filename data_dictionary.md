@@ -130,11 +130,11 @@ Jump to example result.
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|phone_identity|The passive metric type 'phone_identity' describes features of the handset and|installed operating system.|
-|datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the|beginning of the observations.|
+|datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
 |manufacturer|String|api android.os.Build.MANUFACTURER|The field holds a string from the Android method that identifies the handset manufacturer.| 
 |model|String|api android.os.Build.MODEL|The field holds a string from the Android method that identifies the handset model.|
 |os_type|String|android|The field holds a string for the Operating System of the handset. This value is set by the application logic.|
-|os_version|Integer|api android.os.Build.VERSION.SDK_INT|
+|os_version|Integer|api android.os.Build.VERSION.SDK_INT||
 |timestamp|Integer|1359128107|The field contains the unix timestamp of the handset performing the measurement at the beginning of the observations as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
 
 ### network_data Reference
@@ -175,10 +175,11 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 ### cdma_cell_location Reference
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
-|type|String|cdma_cell_location|The passive metric type 'cdma_cell_location' describes the location of handset determined by the CDMA provider technology. |
+|type|String|cdma_cell_location|The passive metric type 'cdma_cell_location' describes the location of handset determined by the CDMA provider technology.|
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
-|timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning of the observations. |
-|base_station_id|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationId()|The field holds an integer from the Android method that identifies the cdma base station identification number, and -1 if unknown. |base_station_latitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLatitude()|The field holds an integer from the Android method that identifies the cdma latitude as a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -1296000 to 1296000, both values inclusive (corresponding to a range of -90 to +90 degrees). Integer.MAX_VALUE is considered invalid value.|
+|timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
+|base_station_id|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationId()|The field holds an integer from the Android method that identifies the cdma base station identification number, and -1 if unknown.|
+|base_station_latitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLatitude()|The field holds an integer from the Android method that identifies the cdma latitude as a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -1296000 to 1296000, both values inclusive (corresponding to a range of -90 to +90 degrees). Integer.MAX_VALUE is considered invalid value.|
 |base_station_longitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLongitude()|The field holds an integer from the Android method that identifies the cdma longitude is a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -2592000 to 2592000, both values inclusive (corresponding to a range of -180 to +180 degrees). Integer.MAX_VALUE is considered invalid value.|
 |system_id|Integer|android.telephony.cdma.CdmaCellLocation   .getSystemId()|The field holds an integer from the Android method that identifies the cdma system identification number, and -1 if unknown.|
 |network_id|Integer|android.telephony.cdma.CdmaCellLocation   .getNetworkId()|The field holds an integer from the Android method that identifies the cdma network identification number, and -1 if unknown.|
