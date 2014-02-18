@@ -110,9 +110,9 @@ Jump to example result.
 |rtt_min|Integer|68023|The field contains the minimum RTT in microseconds|
 |rtt_stddev|Integer|243171|The field contains the standard deviation RTT measured in microseconds|
 |success|Boolean|true|The field contains the number of successes (note: use|failures/(successes+failures)) for packet loss)|
-target|String|n1-the1.samknows.com|The field holds a string of the measurement server target hostname or IP address. The value is pulled from the test configuration file.|
-target_ipaddress|String|46.17.56.234|The field holds a four tuple colon deliminated IP address of the 'target' measurement server, as resolved by the handset's locally configured DNS for the active network used to execute the test.|
-timestamp|Integer|1359128167|The field contains the time the measurement concluded represented as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
+|target|String|n1-the1.samknows.com|The field holds a string of the measurement server target hostname or IP address. The value is pulled from the test configuration file.|
+|target_ipaddress|String|46.17.56.234|The field holds a four tuple colon deliminated IP address of the 'target' measurement server, as resolved by the handset's locally configured DNS for the active network used to execute the test.|
+|timestamp|Integer|1359128167|The field contains the time the measurement concluded represented as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
 
 ### CLOSESTTARGET Reference
 
@@ -126,12 +126,12 @@ timestamp|Integer|1359128167|The field contains the time the measurement conclud
 
 ### phone_identity Reference
 
-|Property|Type|Description|Explanation|
+|Property| Type |Description |Explanation|
 |--------|----|-----------|-----------|
 |type|String|phone_identity|The passive metric type 'phone_identity' describes features of the handset and|installed operating system.|
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the|beginning of the observations.|
-|manufacturer|String|api android.os.Build.MANUFACTURER|The field holds a string from the Android method that identifies the handset manufacturer. 
-|model|String|api android.os.Build.MODEL|The field holds a string from the Android method that identifies the handset model.
+|manufacturer|String|api android.os.Build.MANUFACTURER|The field holds a string from the Android method that identifies the handset manufacturer.| 
+|model|String|api android.os.Build.MODEL|The field holds a string from the Android method that identifies the handset model.|
 |os_type|String|android|The field holds a string for the Operating System of the handset. This value is set by the application logic.|
 |os_version|Integer|api android.os.Build.VERSION.SDK_INT|
 |timestamp|Integer|1359128107|The field contains the unix timestamp of the handset performing the measurement at the beginning of the observations as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
@@ -151,8 +151,8 @@ timestamp|Integer|1359128167|The field contains the time the measurement conclud
 |phone_type_code|Integer|api android.telephony.TelephonyManager  .getPhoneType()|The field holds an integer from the Android method that identifies a constant indicating the device phone type.|
 |network_type|String|HSDPA|The field holds a string converted from the Android method that identifies a|constant indicating the radio technology (network type) currently in use on|the handset for data transmission.|
 |phone_type_code|Integer|api android.telephony.TelephonyManager  .getPhoneType()|The field holds an integer from the Android method that identifies a constant indicating the device phone type.|
-|phone_type|String|GSM|The field holds a string converted from the Android method that identifies a|constant indicating the device phone type.
-|roaming|Boolean|android.telephony.TelephonyManager  .isNetworkRoaming()|The field holds a boolean true false value from the Android method that identifies whether the active connection is considered roaming on the current|network, for GSM purposes.
+|phone_type|String|GSM|The field holds a string converted from the Android method that identifies a|constant indicating the device phone type.|
+|roaming|Boolean|android.telephony.TelephonyManager  .isNetworkRoaming()|The field holds a boolean true false value from the Android method that identifies whether the active connection is considered roaming on the current|network, for GSM purposes.|
 |sim_operator_name|String|android.telephony.TelephonyManager  .getSimOperatorName()|The field holds string from the Android method that identifies the Service Provider Name (SPN)|
 |timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning|of the observations.|
 
@@ -172,14 +172,14 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 
 
 ### cdma_cell_location Reference
-|Property |Type| Description| Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
-|type|String|cdma_cell_location|The passive metric type 'cdma_cell_location' describes the location of handset determined by the CDMA provider technology. 
+|type|String|cdma_cell_location|The passive metric type 'cdma_cell_location' describes the location of handset determined by the CDMA provider technology. |
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
-|timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning of the observations. 
+|timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning of the observations. |
 |base_station_id|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationId()|The field holds an integer from the Android method that identifies the cdma base station identification number, and -1 if unknown. |base_station_latitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLatitude()|The field holds an integer from the Android method that identifies the cdma latitude as a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -1296000 to 1296000, both values inclusive (corresponding to a range of -90 to +90 degrees). Integer.MAX_VALUE is considered invalid value.|
 |base_station_longitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLongitude()|The field holds an integer from the Android method that identifies the cdma longitude is a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -2592000 to 2592000, both values inclusive (corresponding to a range of -180 to +180 degrees). Integer.MAX_VALUE is considered invalid value.|
-|system_id|Integer|android.telephony.cdma.CdmaCellLocation   .getSystemId()|The field holds an integer from the Android method that identifies the cdma system identification number, and -1 if unknown.td>|
+|system_id|Integer|android.telephony.cdma.CdmaCellLocation   .getSystemId()|The field holds an integer from the Android method that identifies the cdma system identification number, and -1 if unknown.|
 |network_id|Integer|android.telephony.cdma.CdmaCellLocation   .getNetworkId()|The field holds an integer from the Android method that identifies the cdma network identification number, and -1 if unknown.|
 |dbm|Integer|android.telephony.SignalStrength   .getCdmaDbm()|The field holds an integer from the Android method that identifies the CDMA RSSI value in dBm.|
 |ecio|Integer|api android.telephony.SignalStrength   .getCdmaEcio()|The field holds an integer from the Android method that identifies the CDMA Ec/Io value in dB*10|
