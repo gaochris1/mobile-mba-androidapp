@@ -1,6 +1,6 @@
 ### Mobile Performance Data Dictionary
 
-[Measurement] (#measurement)
+[Measurement](#measurement)
 
   * **Tests**
 
