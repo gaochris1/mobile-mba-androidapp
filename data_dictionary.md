@@ -102,6 +102,7 @@ Jump to example result.
 ### JUDPLATENCY Reference
 
 |Property| Type| Description| Explanation|
+|--------|------|------------|-----------|
 |type|String|JUDPLATENCY|The active metric type 'JUDPLATENCY' describes measurement results of the|active test for latency performance.|
 |datetime|String|Fri Jan 25 15:36:07 GMT 2013|The field contains the time test finished in UTC.|
 |lost_packets|Integer|1|The field contains the number of lost packets during the test|
@@ -126,7 +127,7 @@ Jump to example result.
 
 ### phone_identity Reference
 
-|Property| Type |Description |Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|phone_identity|The passive metric type 'phone_identity' describes features of the handset and|installed operating system.|
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the|beginning of the observations.|
@@ -158,7 +159,7 @@ Jump to example result.
 
 ### gsm_cell_location Reference
 
-|Property| Type |Description |Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' describes the location of handsetdetermined by the GSM provider technology.|
 |bit_error_rate|Integer|android.telephony.SignalStrength.getGsmBitErrorRate()|The field holds an integer from the Android method that identifies the GSM bit error rate (0-7, 99) as defined in TS 27.007 8.5.|
@@ -186,7 +187,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 
 ### cell_neighbour_tower_data Reference
 
-|Property| Type |Description |Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|cell_neighbour_tower_data|The passive metric type 'cell_neighbour_tower_data' describes the location of handset determined by the GSM provider technology. Calls to this constructor require a radio network type to specified, and responses to the respective Android API calls return the values from the appropriate access network methods.|
 |cell_tower_id|Integer|api android.telephony.NeighboringCellInfo   .getCid()|The field holds an integer from the Android method that identifies the neighboring cell tower location id, noting -1 if unknown, and 0xffff as the max allowable value.|
@@ -199,7 +200,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 |umts_psc|Integer|android.telephony.NeighboringCellInfo   .getPsc()|The field holds an integer from the Android method that identifies the neighboring cell tower Primary Scrambling Code in 9 bits format in UMTS, 0x1ff max value UNKNOWN_CID if in GSM or CMDA or unknown. |
 ### location Reference
 
-|Property |Type |Description |Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|location|The passive metric type 'location' describes the location of the handset determined by network provider technology or GPS at the time of the observation|
 |accuracy|Float|android.location.Location   .getAccuracy()|The field holds a float from the Android method that identifies the accuracy of this location, in meters.|
@@ -211,7 +212,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 
 ### PARAM_EXPIRED Reference
 
-|Property |Type |Description| Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|PARAM_EXPIRED|The passive metric type 'PARAM_EXPIRED' is a metric which tells that value of a parameter has been expired. At the time being it is used to get control the value of the closest target.|
 |datetime|String|Fri Jan 25 10:22:13 EST 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
@@ -220,7 +221,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 
 
 ### NETACTIVITY Reference
-|Property |Type |Description |Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|NETACTIVITY|The passive metric type 'NETACTIVITY' describes the traffic sent and received by the handset during a test condition period.|
 |bytesin|Integer|0|The field holds an integer value that identifies the number of bytes received by the handset during the test condition period.|bytesout|Integer|0|The field holds an integer value that identifies the number of bytes sent by the handset during the test condition period.|
@@ -233,7 +234,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 
 ### CPUACTIVITY Reference
 
-|Property |Type| Description |Explanation|
+|Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 type|String|CPUACTIVITY|The passive metric type 'CPUACTIVITY' describes the cpu activity of the handset during a test condition period. |
 |datetime|String|Fri Jan 25 10:23:16 EST 2013|The unix time and date of the handset performing the measurement at the beginning of the observations. |
