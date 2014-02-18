@@ -1,6 +1,6 @@
 ### Mobile Performance Data Dictionary
 
-[Measurement](#measurement)
+[Measurement](#measurement-1)
 
   * **Tests**
 
@@ -47,7 +47,7 @@ storage infrastructure.
 
 Jump to example result.
 
-### Measurement Reference <a id="measurement"></a>
+### Measurement Reference <a id="measurement-1"></a>
 
 |Property |Type |Description |Explanation|
 |---------|-----|------------|-----------|
