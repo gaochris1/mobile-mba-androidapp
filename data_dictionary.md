@@ -4,7 +4,7 @@
 
   * **Tests**
 
-    * JHTTPGETMT
+    * [JHTTPGETMT](#JHTTPGETMT)
     * JHTTPPOSTMT
     * JUDPLATENCY
     * CLOSESTTARGET
@@ -66,7 +66,7 @@ Jump to example result.
 |metrics|JSON Array|Results for phone_identity, network_data, [gsm_cell_location OR cdma_cell_location], cell_neighbour_tower_data, location|(See below for details of array.)  There are 6 entries in this array, one for each result type.|
 |conditions|JSON Array|Results for PARAM_EXPIRED, NETACTIVITY, CPUACTIVITY|(See below for details of array.)  There are 3 entries in this array, one for each result type.|
 
-### JHTTPGETMT Reference
+### JHTTPGETMT Reference <a id="JHTTPGETMT"></a>
 
 |Property| Type| Description| Explanation|
 |--------|-----|------------|------------|
