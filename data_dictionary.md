@@ -47,7 +47,7 @@ storage infrastructure.
 
 [Jump to example result.](#example)
 
-### Measurement Reference <a name="measurement"></a>
+### <a name="measurement"></a>Measurement Reference 
 
 |Property |Type |Description |Explanation|
 |---------|-----|------------|-----------|
@@ -82,7 +82,7 @@ storage infrastructure.
 |warmup_bytes|Integer|145024|The field contains the Bytes transferred for all the TCP streams during the warm-up phase.|
 |warmup_time|Integer|1309661|The field contains the time consumed for all the TCP streams to arrive at|optimal window size (Units: microseconds).|
 
-### JHTTPPOSTMT Reference <a name="JHTTPPOSTMT"></a>
+### <a name="JHTTPPOSTMT"></a>JHTTPPOSTMT Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -99,7 +99,7 @@ storage infrastructure.
 |warmup_bytes|Integer|114176|The field contains the Bytes transferred for all the TCP streams during the warm-up phase.|
 |warmup_time|Integer|1496460|The field contains the time consumed for all the TCP streams to arrive at optimal window size (Units: microseconds).|
 
-### JUDPLATENCY Reference <a name="JUDPLATENCY"></a>
+### <a name="JUDPLATENCY"></a>JUDPLATENCY Reference 
 
 |Property| Type| Description| Explanation|
 |--------|------|------------|-----------|
@@ -115,7 +115,7 @@ storage infrastructure.
 |target_ipaddress|String|46.17.56.234|The field holds a four tuple colon deliminated IP address of the 'target' measurement server, as resolved by the handset's locally configured DNS for the active network used to execute the test.|
 |timestamp|Integer|1359128167|The field contains the time the measurement concluded represented as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
 
-### CLOSESTTARGET Reference <a name="CLOSESTTARGET"></a>
+### <a name="CLOSESTTARGET"></a>CLOSESTTARGET Reference 
 
 |Property| Type |Description |Explanation|
 |--------|------|------------|-----------|
@@ -125,7 +125,7 @@ storage infrastructure.
 |success|Boolean|true|The field represents the success or failure of the measurement. True denotes a successful execution of the entire test.|
 |ip_closest_target|String|4.30.14.254|The field contains the IP address of the nearest measurement server|
 
-### phone_identity Reference <a name="phone_identity"></a>
+### <a name="phone_identity"></a>phone_identity Reference 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|phone_identity|The passive metric type 'phone_identity' describes features of the handset and|installed operating system.|
@@ -136,7 +136,7 @@ storage infrastructure.
 |os_version|Integer|api android.os.Build.VERSION.SDK_INT||
 |timestamp|Integer|1359128107|The field contains the unix timestamp of the handset performing the measurement at the beginning of the observations as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
 
-### network_data Reference <a name="network_data"></a>
+### <a name="network_data"></a>network_data Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -156,7 +156,7 @@ storage infrastructure.
 |sim_operator_name|String|android.telephony.TelephonyManager  .getSimOperatorName()|The field holds string from the Android method that identifies the Service Provider Name (SPN)|
 |timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning|of the observations.|
 
-### gsm_cell_location Reference <a name="gsm_cell_location"></a>
+### <a name="gsm_cell_location"></a>gsm_cell_location Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -171,7 +171,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 
 
 
-### cdma_cell_location Reference <a name="cdma_cell_location"></a>
+### <a name="cdma_cell_location"></a>cdma_cell_location Reference 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|cdma_cell_location|The passive metric type 'cdma_cell_location' describes the location of handset determined by the CDMA provider technology.|
@@ -185,7 +185,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 |dbm|Integer|android.telephony.SignalStrength   .getCdmaDbm()|The field holds an integer from the Android method that identifies the CDMA RSSI value in dBm.|
 |ecio|Integer|api android.telephony.SignalStrength   .getCdmaEcio()|The field holds an integer from the Android method that identifies the CDMA Ec/Io value in dB*10|
 
-### cell_neighbour_tower_data Reference <a name="cell_neighbour_tower_data"></a>
+### <a name="cell_neighbour_tower_data"></a>cell_neighbour_tower_data Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -199,7 +199,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 |timestamp|Integer|1359085113|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
 |umts_psc|Integer|android.telephony.NeighboringCellInfo   .getPsc()|The field holds an integer from the Android method that identifies the neighboring cell tower Primary Scrambling Code in 9 bits format in UMTS, 0x1ff max value UNKNOWN_CID if in GSM or CMDA or unknown. |
 
-### location Reference <a name="location"></a>
+### <a name="location"></a>location Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -211,7 +211,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 |longitude|Double|android.location.Location   .getLongitude()|The field holds a double from the Android method that identifies the longitude, in degrees.|
 |timestamp|String|android.location.Location   .getTime()|The unix timestamp of the handset performing the measurement at the beginning of the observations.||
 
-### PARAM_EXPIRED Reference <a name="PARAM_EXPIRED"></a>
+### <a name="PARAM_EXPIRED"></a>PARAM_EXPIRED Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -221,7 +221,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 |timestamp|Integer|1359127333|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
 
 
-### NETACTIVITY Reference <a name="NETACTIVITY"></a>
+### <a name="NETACTIVITY"></a>NETACTIVITY Reference 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
 |type|String|NETACTIVITY|The passive metric type 'NETACTIVITY' describes the traffic sent and received by the handset during a test condition period.|
@@ -233,7 +233,7 @@ type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' descri
 |timestamp|Integer|1359127401|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
 
 
-### CPUACTIVITY Reference <a name="CPUACTIVITY"></a>
+### <a name="CPUACTIVITY"></a>CPUACTIVITY Reference 
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
@@ -244,7 +244,7 @@ type|String|CPUACTIVITY|The passive metric type 'CPUACTIVITY' describes the cpu 
 |success|Boolean|true|The field holds a boolean value that identifies whether the cpu activity has been lower of max_average during the test condition period. |
 |timestamp|Integer|1359127396|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
 
-### Example <a name="example"></a>
+### <a name="example"></a>Example 
 
     
     
