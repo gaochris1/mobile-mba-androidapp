@@ -160,7 +160,7 @@ storage infrastructure.
 
 |Property|Type|Description|Explanation|
 |--------|----|-----------|-----------|
-type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' describes the location of handsetdetermined by the GSM provider technology.|
+|type|String|gsm_cell_location|The passive metric type 'gsm_cell_location' describes the location of handsetdetermined by the GSM provider technology.|
 |bit_error_rate|Integer|android.telephony.SignalStrength.getGsmBitErrorRate()|The field holds an integer from the Android method that identifies the GSM bit error rate (0-7, 99) as defined in TS 27.007 8.5.|
 |cell_tower_id|Integer|api android.telephony.gsm.GsmCellLocation.getCid()|The field holds an integer from the Android method that identifies the GSM tower location id, noting -1 if unknown, and 0xffff as the max allowable value.|
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
