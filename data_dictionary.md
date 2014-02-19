@@ -130,10 +130,10 @@ storage infrastructure.
 |--------|----|-----------|-----------|
 |type|String|phone_identity|The passive metric type 'phone_identity' describes features of the handset and|installed operating system.|
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
-|manufacturer|String|api android.os.Build.MANUFACTURER|The field holds a string from the Android method that identifies the handset manufacturer.| 
-|model|String|api android.os.Build.MODEL|The field holds a string from the Android method that identifies the handset model.|
+|manufacturer|String|api android.os .Build.MANUFACTURER|The field holds a string from the Android method that identifies the handset manufacturer.| 
+|model|String|api android.os .Build.MODEL|The field holds a string from the Android method that identifies the handset model.|
 |os_type|String|android|The field holds a string for the Operating System of the handset. This value is set by the application logic.|
-|os_version|Integer|api android.os.Build.VERSION.SDK_INT||
+|os_version|Integer|api android.os .Build.VERSION.SDK_INT||
 |timestamp|Integer|1359128107|The field contains the unix timestamp of the handset performing the measurement at the beginning of the observations as a sql TIMESTAMP datatype. http://developer.android.com/reference/java/sql/Timestamp.html|
 
 ### <a name="network_data"></a>network_data Reference 
