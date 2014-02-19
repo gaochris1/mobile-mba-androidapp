@@ -177,13 +177,20 @@ storage infrastructure.
 |type|String|cdma_cell_location|The passive metric type 'cdma_cell_location' describes the location of handset determined by the CDMA provider technology.|
 |datetime|String|Fri Jan 25 15:35:07 GMT 2013|The unix time and date of the handset performing the measurement at the beginning of the observations.|
 |timestamp|Integer|1359128107|The unix timestamp of the handset performing the measurement at the beginning of the observations.|
-|base_station_id|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationId()|The field holds an integer from the Android method that identifies the cdma base station identification number, and -1 if unknown.|
-|base_station_latitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLatitude()|The field holds an integer from the Android method that identifies the cdma latitude as a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -1296000 to 1296000, both values inclusive (corresponding to a range of -90 to +90 degrees). Integer.MAX_VALUE is considered invalid value.|
-|base_station_longitude|Integer|android.telephony.cdma.CdmaCellLocation   .getBaseStationLongitude()|The field holds an integer from the Android method that identifies the cdma longitude is a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -2592000 to 2592000, both values inclusive (corresponding to a range of -180 to +180 degrees). Integer.MAX_VALUE is considered invalid value.|
-|system_id|Integer|android.telephony.cdma.CdmaCellLocation   .getSystemId()|The field holds an integer from the Android method that identifies the cdma system identification number, and -1 if unknown.|
-|network_id|Integer|android.telephony.cdma.CdmaCellLocation   .getNetworkId()|The field holds an integer from the Android method that identifies the cdma network identification number, and -1 if unknown.|
-|dbm|Integer|android.telephony.SignalStrength   .getCdmaDbm()|The field holds an integer from the Android method that identifies the CDMA RSSI value in dBm.|
-|ecio|Integer|api android.telephony.SignalStrength   .getCdmaEcio()|The field holds an integer from the Android method that identifies the CDMA Ec/Io value in dB*10|
+|base_station_id|Integer|android.telephony
+.cdma.CdmaCellLocation   .getBaseStationId()|The field holds an integer from the Android method that identifies the cdma base station identification number, and -1 if unknown.|
+|base_station_latitude|Integer|android.telephony
+.cdma.CdmaCellLocation   .getBaseStationLatitude()|The field holds an integer from the Android method that identifies the cdma latitude as a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -1296000 to 1296000, both values inclusive (corresponding to a range of -90 to +90 degrees). Integer.MAX_VALUE is considered invalid value.|
+|base_station_longitude|Integer|android.telephony.
+cdma.CdmaCellLocation   .getBaseStationLongitude()|The field holds an integer from the Android method that identifies the cdma longitude is a decimal number as specified in 3GPP2 C.S0005-A v6.0. (http://www.3gpp2.org/public_html/specs/C.S0005-A_v6.0.pdf) It is represented in units of 0.25 seconds and ranges from -2592000 to 2592000, both values inclusive (corresponding to a range of -180 to +180 degrees). Integer.MAX_VALUE is considered invalid value.|
+|system_id|Integer|android.telephony.cdma.
+CdmaCellLocation.getSystemId()|The field holds an integer from the Android method that identifies the cdma system identification number, and -1 if unknown.|
+|network_id|Integer|android.telephony.
+cdma.CdmaCellLocation   .getNetworkId()|The field holds an integer from the Android method that identifies the cdma network identification number, and -1 if unknown.|
+|dbm|Integer|android.telephony.
+SignalStrength.getCdmaDbm()|The field holds an integer from the Android method that identifies the CDMA RSSI value in dBm.|
+|ecio|Integer|api android.telephony.
+SignalStrength.getCdmaEcio()|The field holds an integer from the Android method that identifies the CDMA Ec/Io value in dB*10|
 
 ### <a name="cell_neighbour_tower_data"></a>cell_neighbour_tower_data Reference 
 
