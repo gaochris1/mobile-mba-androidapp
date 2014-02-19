@@ -66,7 +66,7 @@ storage infrastructure.
 |metrics|JSON Array|Results for [phone_identity](#phone_identity), [network_data](#network_data), [gsm_cell_location](#gsm_cell_location) OR [cdma_cell_location](#cdma_cell_location), [cell_neighbour_tower_data](#cell_neighbour_tower_data), [location](#location)|(See below for details of array.)  There are 6 entries in this array, one for each result type.|
 |conditions|JSON Array|Results for [PARAM_EXPIRED](#PARAM_EXPIRED), [NETACTIVITY](#NETACTIVITY), [CPUACTIVITY](#CPUACTIVITY)|(See below for details of array.)  There are 3 entries in this array, one for each result type.|
 
-### JHTTPGETMT Reference <a name="JHTTPGETMT"></a>
+### <a name="JHTTPGETMT"></a>JHTTPGETMT Reference 
 
 |Property| Type| Description| Explanation|
 |--------|-----|------------|------------|
